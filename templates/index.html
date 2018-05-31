@@ -1,0 +1,83 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="ui segment blue inverted">
+    <h1>Federated Metadata dashboard</h1>
+    <div class="meta"><i>Logged in as {session.username}</i></div>
+    <div class="description">
+      A list of Metadata (Vendors and Data sources) entered in the metadata DB.
+    </div><br>
+    <div class="ui form">
+      <form action="/action2">
+        <button class="ui button green compact" type="submit"> Add New Vendor </button>
+      </form>
+    </div>
+    {% include 'includes/_messages.html' %}
+</div>
+
+	{% if feddata[0] %}
+	<div span="right">
+	<form action="/search"	method="GET" >
+
+	<div class="ui segment">
+  	<div class="ui category search">
+  	  <div class="ui icon input">
+  	      <input class="prompt" type="text" placeholder="Search Studies...">
+  	      <i class="search icon"></i>
+  	  </div>
+  	  <div class="results"></div>
+  	</div>
+	</div>
+		<table class="ui table basic striped sortable" id="close">
+		<tr>
+		<td></td><td></td>
+		<td><big><b>Search Reference:</b></big></td>
+		<td><select name="refer" required>
+			<option value="name">Vendor Code</option>
+			<option value="desc">Description</option>
+			<option value="date">Date Entered</option>
+			<option value="pr">Created by</option>
+		</select></td>
+		<td><input type="text" name="key" placeholder="Search Task" size="25" /></td>
+		<td><button type="submit">Search</button></td>
+		</tr>
+		</table>
+	</form>
+	</div>
+
+	<h1 class="ui header">List of Studies</h1>
+	<table class="ui table baisc striped sortable" id="vendorlist">
+	    <tr id="row">
+	    	<th class="status"></th>
+        <th class="name ascending">Study Name</th>
+        <th class="code">Vendor Code</th>
+	    	<th class="desc">Description</th>
+	    	<th class="date">Date Entered</th>
+	    	<th class="pr">Creator</th>
+    		<th class="func1">Remove</th>
+    		<th class="func2">Modify</th>
+	    </tr>
+	{% for fd in feddata %}
+		<tr class="datas">
+			<td><a href="./update?_id={{ fd['_id'] }}"><i class="ui icon external"></i></a></td>
+			<td class="name">{{ fd["_id"] }}</td>
+			<td class="code">{{ fd["studynum"]["value"] }}</td>
+            <td class="desc">{{ fd["studynum"]["value"] }}</td>
+			<td class="date">{{ fd["created"]["value"] }}</td>
+			<td class="pr">{{ fd["themenum"]["value"] }}</td>
+			<td class="func1">
+				<a href="./remove?_id={{ fd['_id'] }}"><input class="ui button red" type="submit" value="Delete">
+				</a>
+			</td>
+			<td class="func1">
+				<a href="./update?_id={{ fd['_id'] }}"><input class="ui button green" type="submit" value="Edit">
+				</a>
+			</td>
+		</tr>
+	{% endfor %}
+	</table>
+	{% else %}
+    <div class="ui segment inverted red"><h3>No vendors in the List !!</h3></div>
+	{% endif %}
+
+{% endblock %}

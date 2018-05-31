@@ -1,0 +1,24 @@
+	{% extends 'layout.html' %}
+
+	{% block body %}
+    <div class="ui segment blue inverted">
+        <h1>Federated Metadata - Elasticsearch on a MongoDB</h1>
+        <div class="meta"><i>Logged in as {session.username}</i></div>
+        <div class="description">
+          <p>The app has been created as a front end to the Federated metadata used by the Medcial Data Hub</p>
+          <p>There are currently interfaces for 1 of the 4 meta data tables</p>       
+        </div>
+        		<footer>
+			<h3>Credits :</h3>
+			<div class='credits'>
+				The basic functionality was done by Prashant Shahi<br>CoolBoi567@gmail.com<a href="#"></a>().
+			</div>
+		</footer>
+        <br>
+        {% include 'includes/_messages.html' %}
+        
+    </div>    
+	 
+
+
+	{% endblock %}
