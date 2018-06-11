@@ -7,20 +7,20 @@ import codecs
 import pandas as pd
 from datetime import datetime
 from elasticsearch import Elasticsearch
-from pymongo import MongoClient # Database connector
-from bson.objectid import ObjectId # For ObjectId to work
+#from pymongo import MongoClient # Database connector
+#from bson.objectid import ObjectId # For ObjectId to work
 
 #APP settings
-app = Flask(__name__)
+app = Flask(__name__,static_url_path='/static')
 
 
 #CONNECT TO MONGODB
-client = MongoClient('localhost', 27017)    #Configure the connection to the database
-db = client.timeline                        #Select the database
-tline = db.study                            #Select the collection
+client = MongoClient('localhost', 32769)    #Configure the connection to the database
+db = client.local                           #Select the database
+tline = db.timeline                         #Select the collection
 
 title = "Timeline Example"
-heading = "List Details"
+heading = "Study Details"
 #modify=ObjectId()
 
 @app.route("/home")
@@ -30,10 +30,10 @@ def home():
 @app.route("/tline")
 def lists ():
     #Display the all Study data in the timeline
-    tline_l = tline.find()
-    print(tline_l)
+    #tline_l = tline.find()
+    #print(tline_l)
     a1="active"
-    return render_template('timeline.html',a1=a1,tline_l=tline_l,t=title,h=heading)
+    return render_template('timeline.html',a1=a1,t=title,h=heading)
 
 @app.route("/about")
 def about():

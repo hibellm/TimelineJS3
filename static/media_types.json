@@ -1,0 +1,142 @@
+{
+    "scale": "human",
+	"title": {
+		        "media": {
+		            "caption": "",
+		            "credit": "",
+		            "url": "/static/human-sqr.jpg",
+		            "thumb": 	""
+		        },
+	            "text": {
+	                "headline": "Timeline For Study GN00761",
+	                "text": "<div>A RANDOMIZED, DOUBLE-BLIND,PLACEBO CONTROLLED, PARALLEL GROUP, MULTICENTER PHASE II STUDY TO EVALUATE THE EFFICACY AND SAFETY OF MABT5102A IN PATIENTS WITH MILD TO MODERATE ALZHEIMER'S DISEASE</div>"
+	            }
+	    },
+    "events": [
+        {
+            "background": {
+                "color": "#D1FBC8",
+                "opacity": 25,
+                "url": null
+            },
+            "start_date": {
+                "year":			"2018",
+                "month":		"1",
+                "day": 			"1",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "thumbnail": 	"",
+                "format": 		""
+            },
+            "end_date": {
+                "year":			"2018",
+                "month":		"1",
+                "day": 			"1",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "thumbnail": 	"",
+                "format": 		""
+            },
+            "text": {
+                "headline": "Study Start : PT1001",
+                "text": "This slide has an imgur background."
+            }
+        },
+        {
+            "start_date": {
+                "year":			"2018",
+                "month":		"1",
+                "day": 			"2",
+                "hour": 		"8",
+                "minute": 		"45",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "end_date": {
+                "year":			"2018",
+                "month":		"1",
+                "day": 			"2",
+                "hour": 		"9",
+                "minute": 		"23",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },            
+            "media": {
+                "caption": "",
+                "credit": "MHIBELL",
+                "url": "",
+                "thumb": 	""
+            },
+            "text": {
+                "headline": "ADVERSE EVENT",
+                "text": "AE :Headche (MEDDRACODE : 128500245)<br>SERIOUS: YES<br>Body system: CNS<br>Organ class: Head,nervous system"
+            },
+            "background": {
+                "url": "https://instagram.com/p/0nsIGKIbb7/"
+            }
+        },
+        {
+            "start_date": {
+                "year":			"2018",
+                "month":		"1",
+                "day": 			"5",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "end_date": {
+                "year":			"2018",
+                "month":		"1",
+                "day": 			"5",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "media": {
+                "caption": "",
+                "credit": "",
+                "url": "http://stlab.adobe.com/wiki/images/d/d3/Test.pdf"
+            },
+            "text": {
+                "headline": "PDF",
+                "text": "This is a PDF slide"
+            },
+            "unique_id": ""
+        },
+        {
+            "background": {
+                "color": "#123",
+                "opacity": 50,
+                "url": null
+            },
+            "start_date": {
+                "year":			"2018",
+                "month":		"2",
+                "day": 			"14",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "thumbnail": 	"",
+                "format": 		""
+            },
+            "text": {
+                "headline": "ECG Measurement",
+                "text": "<table class='mjhtable'><tr><th>Position</th><th>ECG Meaurement</th><th>Value</th></tr><tr><td rowspan='4'>Supine</td><td>ECG Meaurement</td><td>Value</td></tr><tr><td>Blood Pressure (mmHg)</td><td>50</td></tr><tr><td>Heart Rate (bpm)</td><td>94</td></tr><tr><td>T-wave (msec)</td><td>80</td></tr></table>"
+            },
+            "background": {
+                "url": "http://imgur.com/gallery/e47JWq7"
+            }
+        }    
+    ]
+}
